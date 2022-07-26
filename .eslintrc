@@ -1,0 +1,24 @@
+{
+  "root": true,
+  "extends": ["@react-native-community", "prettier"],
+  //    "parser": "babel-eslint",
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["import"],
+  "rules": {
+    "no-console": "warn",
+    //        "import/order": [
+        //                "error",
+        //            {
+        //                "groups": ["external", "internal", "builtin", "parent", "unknown", "index", "sibling"],
+        //                "newlines-between": "always"
+                                                //            }
+        //        ],
+    "import/no-absolute-path": 2,
+    "import/no-useless-path-segments": 2,
+    "import/newline-after-import": 2,
+    "react-hooks/exhaustive-deps": "off",
+    "react/jsx-key": "error",
+    "react/jsx-curly-brace-presence": ["error", { "props":  "never", "children":  "never"}],
+    "arrow-body-style": ["error", "as-needed"]
+  }
+}
