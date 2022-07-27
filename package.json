@@ -10,6 +10,7 @@
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx"
   },
   "dependencies": {
+    "axios": "^0.27.2",
     "eslint-import-resolver-babel-module": "^5.3.1",
     "eslint-plugin-flowtype": "^5.9.2",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -17,9 +18,11 @@
     "mobx": "^6.6.1",
     "react": "18.0.0",
     "react-native": "0.69.2",
+    "react-native-config": "^1.4.6",
     "react-native-navigation": "^7.28.1",
     "react-native-svg": "^12.4.2",
-    "victory-native": "^36.5.3"
+    "victory-native": "^36.5.3",
+    "@react-native-picker/picker": "^2.4.2"
   },
   "devDependencies": {
     "@babel/core": "^7.12.9",
