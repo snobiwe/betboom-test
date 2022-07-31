@@ -1,6 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios'
 
 import { config } from '../../Globals'
+import { GlobalDataType } from '../../screens/Overview'
 
 export default class ApiService {
   /* =================================== Basic methods =================================== */
@@ -16,11 +17,12 @@ export default class ApiService {
     })
   }
 
-  async getOverview(): Promise<{ data: [{}] }> {
+  async getOverview(): Promise<{
+    data: [GlobalDataType]
+  }> {
     return ApiService.setApi({
       url: `chart/`,
       method: 'get',
-      baseURL: config.BASE_URL,
     })
   }
 }
