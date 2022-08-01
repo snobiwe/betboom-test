@@ -29,8 +29,6 @@ export type GlobalDataType = {
 }
 
 const OverviewScreen = (props: Props) => {
-  const [overviewData, setOverviewData] = useState<[{}]>([{}])
-  const [chartData, setChartData] = useState<{}>({})
   const daysValue = {
     [DAYS_TYPE.MONDAY]: 0,
     [DAYS_TYPE.TUESDAY]: 0,
